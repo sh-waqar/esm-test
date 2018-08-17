@@ -1,0 +1,24 @@
+.sass-cache/
+.idea/
+.tmp/
+*.log
+*.mo
+*.DS_Store
+
+
+dist/
+node_modules/
+releases/
+translations/
+src/revision.txt
+
+
+# icon font generated files
+src/assets/styles/scss/_icons.scss
+src/assets/fonts/iconfont
+
+
+# legacy stuff
+bower_components/
+coverage/
+log/
