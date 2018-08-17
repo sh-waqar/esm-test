@@ -4,7 +4,7 @@ export default function config($stateProvider) {
     .state('profile', {
       url: '/',
       template: require('./profile.html'),
-      // controller: 'ProfileController',
-      // controllerAs: 'vm',
+      controller: 'ProfileController',
+      controllerAs: 'vm',
     });
 }
