@@ -36,10 +36,5 @@ module.exports = (env = {}) =>
         exclude: [/locale/]
       }),
       ...(env.analysis ? [new BundleAnalyzerPlugin()] : [])
-    ],
-    module: {
-      rules: [
-        loaders.lint('production')
-      ]
-    }
+    ]
   });

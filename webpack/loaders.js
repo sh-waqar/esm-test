@@ -20,33 +20,6 @@ exports.scripts = {
   exclude: /node_modules/
 };
 
-exports.lint = mode => {
-  const baseConfig = {
-    test: /\.js$/,
-    enforce: 'pre',
-    loader: 'eslint-loader',
-    options: {
-      failOnError: true
-    },
-    exclude: /node_modules/
-  };
-
-  switch (mode) {
-    case MODE_DEV:
-      // TODO: Use Object spread here when Jenkins updates to npm 6 and node 8
-      return extend({}, baseConfig, {
-        options: {
-          failOnError: false,
-          emitWarning: true
-        }
-      });
-
-    default:
-      return baseConfig;
-  }
-};
-
-
 exports.styles = {
   test: /\.(scss|css)$/,
   use: [

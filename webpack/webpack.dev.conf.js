@@ -29,10 +29,5 @@ module.exports = merge(common, {
     new webpack.SourceMapDevToolPlugin({
       exclude: /\.js$/
     })
-  ],
-  module: {
-    rules: [
-      loaders.lint('development')
-    ]
-  }
+  ]
 });
