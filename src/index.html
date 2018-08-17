@@ -10,10 +10,20 @@
   </head>
   <body>
 
-    <a ui-sref="profile" ui-sref-active="active">Profile</a>
-    <a ui-sref="articles" ui-sref-active="active">Articles</a>
+    <div class="container">
 
-    <div ui-view></div>
+      <ul class="tab">
+        <li class="tab-item">
+          <a ui-sref="profile" ui-sref-active="active">Profile</a>
+        </li>
+        <li class="tab-item">
+          <a ui-sref="articles" ui-sref-active="active">Articles</a>
+        </li>
+      </ul>
+
+      <div ui-view></div>
+
+    </div>
 
   </body>
 </html>

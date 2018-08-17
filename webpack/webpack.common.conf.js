@@ -33,7 +33,8 @@ module.exports = {
   module: {
     rules: [
       loaders.html,
-      loaders.scripts
+      loaders.scripts,
+      loaders.styles
     ]
   }
 };

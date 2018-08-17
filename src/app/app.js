@@ -7,6 +7,8 @@ import profile from './profile/profile';
 
 import common from './common/common';
 
+import 'spectre.css';
+
 export default angular
   .module('esmTest', [
     ngResource,

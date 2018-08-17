@@ -45,3 +45,12 @@ exports.lint = mode => {
       return baseConfig;
   }
 };
+
+
+exports.styles = {
+  test: /\.(scss|css)$/,
+  use: [
+    'style-loader',
+    'css-loader'
+  ]
+};
