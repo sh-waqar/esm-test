@@ -5,10 +5,7 @@ const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const InlineSourcePlugin = require('html-webpack-inline-source-plugin');
 
-const services = require('./services');
 const config = require('./config');
 
 exports.cleanDist = new CleanWebpackPlugin(config.paths.dist, {

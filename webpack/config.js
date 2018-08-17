@@ -8,8 +8,6 @@ exports.paths = {
   dist: path.resolve(__dirname, '../dist')
 };
 
-exports.env = environment;
-
 exports.server = {
   host: '0.0.0.0',
   port: 9000
