@@ -20,5 +20,6 @@ exports.generateIndex = new HtmlWebpackPlugin({
 });
 
 exports.provideGlobalModules = new webpack.ProvidePlugin({
-  _: 'lodash'
+  _: 'lodash',
+  React: 'react'
 });
