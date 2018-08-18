@@ -2,11 +2,9 @@ function ArticlesController(someService) {
   'ngInject';
   var vm = this;
 
-  vm.count = 0
+  vm.count = someService.getCount() || 0;
   vm.numberA = 0;
   vm.numberB = 0;
-
-  someService.setCount(vm.count);
 
   vm.addNumbers = function() {
     vm.count = articlesService.adds(vm.numberA, vm.numberB)
