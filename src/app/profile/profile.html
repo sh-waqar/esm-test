@@ -1,5 +1,5 @@
 <div>
-  <h1>Profile</h1>
+  <h1>Articles</h1>
 
   <p>
     Count: {{vm.count}}
@@ -16,5 +16,9 @@
     <input class="form-input" ng-model="vm.numberB" type="number">
   </div>
 
-  <button ng-click="vm.add()">Add numbers</button>
+  <button ng-click="vm.addNumbers()">Add numbers</button>
+
+  <p>
+    Total: {{vm.total}}
+  </p>
 </div>
