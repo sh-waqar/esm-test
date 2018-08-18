@@ -9,7 +9,8 @@ function someService() {
     subtractCount,
     setCount,
     getCount,
-    count
+    count,
+    randomHugeFunc
   }
 
   function getCount() {
