@@ -1,31 +1,26 @@
-import {
-  getCount,
-  add,
-  addCount,
-  subtractCount
-} from '../common/some.esm.js';
+import someService from '../common/some.esm.js';
 
 function ArticlesController() {
   'ngInject';
   var vm = this;
 
-  vm.count = getCount() || 0;
+  vm.count = someService.getCount() || 0;
   vm.numberA = 0;
   vm.numberB = 0;
   vm.total = 0;
 
   vm.addNumbers = function() {
-    vm.total = add(vm.numberA, vm.numberB)
+    vm.total = someService.add(vm.numberA, vm.numberB)
   }
 
   vm.addCount = function() {
-    addCount()
-    vm.count = getCount()
+    someService.addCount()
+    vm.count = someService.getCount()
   }
 
   vm.subtractCount = function() {
-    subtractCount()
-    vm.count = getCount()
+    someService.subtractCount()
+    vm.count = someService.getCount()
   }
 
 }
