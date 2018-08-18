@@ -5,9 +5,10 @@ function ProfileController(someService) {
   vm.count = someService.getCount() || 0;
   vm.numberA = 0;
   vm.numberB = 0;
+  vm.total = 0;
 
   vm.addNumbers = function() {
-    vm.count = articlesService.adds(vm.numberA, vm.numberB)
+    vm.total = someService.add(vm.numberA, vm.numberB)
   }
 
   vm.addCount = function() {
