@@ -5,7 +5,8 @@ import {
   subtractCount,
   setCount,
   getCount,
-  count
+  count,
+  randomHugeFunc
 } from './some.esm';
 
 function someService() {
@@ -17,7 +18,8 @@ function someService() {
     subtractCount,
     setCount,
     getCount,
-    count
+    count,
+    randomHugeFunc
   }
 
 }
