@@ -15,7 +15,9 @@
     "angular-resource": "~1.4.9",
     "angular-ui-router": "~0.2.18",
     "lodash": "~3.10.0",
-    "spectre.css": "^0.5.3"
+    "promise-polyfill": "^8.1.0",
+    "spectre.css": "^0.5.3",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
