@@ -2,6 +2,7 @@
 
 const path = require('path');
 const { extend } = require('lodash');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = require('./config');
 
@@ -23,7 +24,7 @@ exports.scripts = {
 exports.styles = {
   test: /\.(scss|css)$/,
   use: [
-    'style-loader',
+    MiniCssExtractPlugin.loader,
     'css-loader'
   ]
 };

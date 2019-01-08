@@ -8,6 +8,9 @@ function ArticlesController(someService) {
   vm.total = 0;
 
   vm.addNumbers = function() {
+    import('../en.json').then(data => {
+      vm.data = data;
+    });
     vm.total = someService.add(vm.numberA, vm.numberB)
   }
 
